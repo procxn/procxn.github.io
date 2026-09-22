@@ -1,6 +1,6 @@
 # 联动计划 Procxn 纪念档案馆
 
-纪念 2013–2017 年国内学生模拟联合国教育组织「联动计划」（原官网 www.procxn.org）的静态档案网站。
+纪念 2012–2018 年国内学生模拟联合国教育组织「联动计划」（Project Connexion，原官网 www.procxn.org）的静态档案网站。
 
 - 正式地址：**https://www.procxn.org**
 - 备用地址：https://procxn.github.io（自动跳转到正式地址）

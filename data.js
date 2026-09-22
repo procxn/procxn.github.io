@@ -12,7 +12,7 @@ const SITE_DATA = {
   albums: [
     {
       id: "2013-qidian",          // 唯一标识，仅用英文和连字符
-      title: "成立之初",
+      title: "早期活动",
       year: "2013",
       cover: "assets/photos/2013/p1.svg",
       desc: "【待补充】联动计划发起、第一届团队与早期活动的照片。",
