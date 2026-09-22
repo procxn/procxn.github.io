@@ -50,6 +50,22 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划2015年夏季招募令",
+      year: "2015",
+      category: "组织文献",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-recruitment.md",
+      desc: "成立第三年发布的人员招募令：面向全国招募联动学院、公关拓展部、项目运营部与地区负责人团队四个部门的成员，并系统介绍了组织的理念、业务版图与架构。通过此次招募吸收了数十位第三代核心成员。"
+    },
+    {
+      title: "联动计划协力第三届华熠全国中学生模拟联合国大会成功举办",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-gsmunc.md",
+      desc: "2015年8月10–13日，上海华东师大一附中。第三届华熠模联（GSMUNC）：近40所学校180余位代表，设国家卫计委与司法部联合会议、安理会、苏共二十七大、世界知识产权组织与欧盟峰会五个委员会；联动计划派出学术总监及十余名学术团队成员。"
+    },
+    {
       title: "联动计划协力首届乌鲁木齐联动全疆模拟联合国大会举行",
       year: "2015",
       category: "新闻通讯",
