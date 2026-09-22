@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力2016年加州大学伯克利分校模拟联合国中国会议举行",
+      year: "2016",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2016-bmun-china.md",
+      desc: "2016年3月25–27日，上海。第二届BMUN CHINA：二十余所学校约180名代表，设GA-SOCHUM、安理会、人权理事会与亚投行四个委员会，8名伯克利主席来沪主持；联动计划成员出任中方学术总监并承担会务组织。"
+    },
+    {
       title: "联动计划协力首届京津冀模联暨2016年泛渤海中学生模拟联合国大会成功举行",
       year: "2016",
       category: "新闻通讯",
