@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力第三届中南地区中学生模拟联合国大会",
+      year: "2016",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2016-cscmunc.md",
+      desc: "2016年1月24–28日，长沙。长沙一中与湖南师大附中联合主办，十余所学校近200名代表，设美苏内阁危机联动、安理会、美国国会、经社理事会可持续发展委员会与主新闻中心五个委员会；联动计划作为协办方提供全程学术支持。"
+    },
+    {
       title: "联动计划助力第四届中南地区中学生模拟联合国大会成功举办",
       year: "2017",
       category: "新闻通讯",
