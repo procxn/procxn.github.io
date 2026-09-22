@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划成功协办2017年加州伯克利模拟联合国中国会议",
+      year: "2017",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2017-bmun-china.md",
+      desc: "2017年3月31日–4月2日，上海。第三届BMUN CHINA设GA-DISEC、UNSC、NATO三个委员会，十余所学校约80名代表参会。联动计划自2015年起与全球历史最悠久的模联之一——伯克利模联（BMUN）合作，为这一非营利海外名校会议提供学术与组织支持。"
+    },
+    {
       title: "联动计划助力第五届泛渤海中学生模拟联合国大会举行",
       year: "2017",
       category: "新闻通讯",
