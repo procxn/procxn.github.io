@@ -87,7 +87,7 @@
       var btn = d.file
         ? '<button data-open="' + SITE_DATA.documents.indexOf(d) + '">在线阅读</button>' +
           '<a href="' + d.file + '" download>下载</a>'
-        : '<button disabled>待上传</button>';
+        : (d.fulltext ? '' : '<button disabled>待上传</button>');
       if (d.fulltext) btn += '<a href="' + d.fulltext + '" target="_blank" rel="noopener">全文备份</a>';
       return '<div class="doc-card"><span class="cat">' + (d.category || '未分类') + '</span>' +
              '<h3>' + d.title + '</h3>' +

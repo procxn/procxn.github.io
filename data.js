@@ -50,6 +50,22 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划助力第五届泛渤海中学生模拟联合国大会举行",
+      year: "2017",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2017-panbohai-conference.md",
+      desc: "2017年7月16–20日，天津。约70所学校近400名代表参会，设联合国系统、日本系统与天命：1644等十一个委员会；联动计划作为学术支持方为大会提供全面支持。"
+    },
+    {
+      title: "《模拟联合国会议学术指导手册》更新第五版",
+      year: "2017",
+      category: "出版物",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2017-mun-academic-guide-v5.md",
+      desc: "联动计划自2013年起编写的手册更新至第五版：从入门到进阶的系统培训、创新形式会议介绍、情景实例与中英文对照。曾定价20元/册，团体订购25册以上七五折。"
+    },
+    {
       title: "示例文件 · 在线预览演示",
       year: "2014",
       category: "背景文件",
