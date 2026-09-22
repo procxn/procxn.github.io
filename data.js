@@ -44,6 +44,10 @@ const SITE_DATA = {
   ],
 
   /* ---------- 文件馆 ---------- */
+  /* 字段说明：
+     file     —— PDF 路径（assets/docs/），用于在线阅读与下载
+     fulltext —— 可选。全文备份页链接（仓库 archive/documents/ 下的 GitHub 地址），
+                 前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
       title: "示例文件 · 在线预览演示",
