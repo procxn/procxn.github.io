@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文件馆 · 联动计划 Procxn 纪念档案馆</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231f2a44'/%3E%3Ctext x='50' y='63' font-size='42' text-anchor='middle' fill='%23e8c979' font-family='Georgia,serif'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="pagehead">
+  <div class="crumb"><a href="index.html">← 返回首页</a></div>
+  <h1>文件馆</h1>
+  <p>背景文件 · 会刊 · 决议草案 · 危机推演材料</p>
+</header>
+
+<nav class="nav">
+  <a href="index.html">首页</a>
+  <a href="timeline.html">大事记</a>
+  <a href="gallery.html">图册</a>
+  <a href="documents.html" class="active">文件馆</a>
+  <a href="about.html">关于</a>
+  <a href="memory.html">纪念墙</a>
+</nav>
+
+<main>
+<section class="section">
+  <div class="filter-bar">
+    <input type="search" id="q" placeholder="搜索文件名…">
+    <select id="cat">
+      <option value="">全部分类</option>
+    </select>
+    <select id="yr">
+      <option value="">全部年份</option>
+    </select>
+  </div>
+  <div class="doc-grid" id="doc-grid"></div>
+  <p class="note">※ 点击"在线阅读"可直接预览 PDF；手机浏览器若无法内嵌预览，请用"新窗口打开"或"下载"。想投稿文件请发给站长，注明会议名称与年份。</p>
+</section>
+</main>
+
+<!-- PDF 预览弹窗 -->
+<div class="viewer" id="viewer">
+  <div class="viewer-bar">
+    <span class="vt" id="v-title"></span>
+    <a id="v-newtab" href="#" target="_blank" rel="noopener">新窗口打开</a>
+    <a id="v-download" href="#" download>下载</a>
+    <button id="v-close">关闭</button>
+  </div>
+  <iframe id="v-frame" src="" title="PDF 预览"></iframe>
+</div>
+
+<footer class="footer">
+  <p>联动计划 Procxn · 2013–2017 · 纪念档案馆</p>
+  <p class="footer-small">本站为老成员自发维护 · 托管于 GitHub Pages · 域名 procxn.org</p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById('doc-grid'),
+      q = document.getElementById('q'),
+      cat = document.getElementById('cat'),
+      yr = document.getElementById('yr'),
+      viewer = document.getElementById('viewer');
+
+  // 填充分类/年份下拉
+  [...new Set(SITE_DATA.documents.map(d => d.category))].filter(Boolean)
+    .forEach(c => cat.insertAdjacentHTML('beforeend', '<option>' + c + '</option>'));
+  [...new Set(SITE_DATA.documents.map(d => d.year))].filter(Boolean).sort()
+    .forEach(y => yr.insertAdjacentHTML('beforeend', '<option>' + y + '</option>'));
+
+  function render() {
+    var kw = q.value.trim().toLowerCase(),
+        c = cat.value, y = yr.value;
+    var list = SITE_DATA.documents.filter(function (d) {
+      return (!kw || (d.title + d.desc).toLowerCase().includes(kw)) &&
+             (!c || d.category === c) && (!y || d.year === y);
+    });
+    if (!list.length) {
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1">' +
+        '<span class="ico">🗂️</span>没有匹配的文件。</div>';
+      return;
+    }
+    grid.innerHTML = list.map(function (d, i) {
+      var btn = d.file
+        ? '<button data-open="' + SITE_DATA.documents.indexOf(d) + '">在线阅读</button>' +
+          '<a href="' + d.file + '" download>下载</a>'
+        : '<button disabled>待上传</button>';
+      return '<div class="doc-card"><span class="cat">' + (d.category || '未分类') + '</span>' +
+             '<h3>' + d.title + '</h3>' +
+             '<p class="desc">' + d.desc + '</p>' +
+             '<div class="yr" style="color:#4a5673;font-family:Georgia,serif;font-size:.85rem">' + (d.year || '') + '</div>' +
+             '<div class="acts">' + btn + '</div></div>';
+    }).join('');
+  }
+
+  q.addEventListener('input', render);
+  cat.addEventListener('change', render);
+  yr.addEventListener('change', render);
+
+  // 预览弹窗
+  function openViewer(d) {
+    document.getElementById('v-title').textContent = d.title;
+    document.getElementById('v-frame').src = d.file;
+    document.getElementById('v-newtab').href = d.file;
+    document.getElementById('v-download').href = d.file;
+    viewer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeViewer() {
+    viewer.classList.remove('open');
+    document.getElementById('v-frame').src = '';
+    document.body.style.overflow = '';
+  }
+  grid.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-open]');
+    if (b) openViewer(SITE_DATA.documents[+b.dataset.open]);
+  });
+  document.getElementById('v-close').onclick = closeViewer;
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && viewer.classList.contains('open')) closeViewer();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
