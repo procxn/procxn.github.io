@@ -1,0 +1,207 @@
+/* 联动计划纪念页样式 —— 沉稳、庄重、略带联合国蓝与金色 */
+
+:root {
+  --ink: #1f2a44;        /* 联合国式深蓝 */
+  --ink-soft: #4a5673;
+  --paper: #faf7f0;      /* 米白纸张色 */
+  --paper-alt: #f1ecdf;
+  --gold: #c9a24b;       /* 纪念金 */
+  --line: #d8d0bd;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", SimSun, Georgia, serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.9;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% -20%, #2c3a5e 0%, var(--ink) 60%, #141c30 100%);
+  color: var(--paper);
+  padding: 4rem 1.5rem;
+}
+.hero-inner { max-width: 720px; }
+.emblem {
+  font-size: 3.2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  opacity: .9;
+}
+.hero-domain {
+  letter-spacing: .35em;
+  font-size: .85rem;
+  color: #9fb0d0;
+  margin-bottom: 1.2rem;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 8vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-indent: .25em; /* 平衡字间距 */
+}
+.hero-sub {
+  margin-top: 1rem;
+  font-size: .8rem;
+  letter-spacing: .3em;
+  color: #b9c4dc;
+}
+.hero-years {
+  margin-top: 1.6rem;
+  font-size: 1.5rem;
+  color: var(--gold);
+  letter-spacing: .2em;
+  font-family: Georgia, serif;
+}
+.hero-epitaph {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  color: #d7dcea;
+}
+.hero-cta {
+  display: inline-block;
+  margin-top: 3rem;
+  color: var(--gold);
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  padding: .6rem 2rem;
+  border-radius: 2rem;
+  font-size: .95rem;
+  letter-spacing: .1em;
+  transition: background .3s, color .3s;
+}
+.hero-cta:hover { background: var(--gold); color: #141c30; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  background: rgba(250, 247, 240, .95);
+  border-bottom: 1px solid var(--line);
+  padding: .9rem 1rem;
+  backdrop-filter: blur(6px);
+}
+.nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: .95rem;
+  letter-spacing: .15em;
+}
+.nav a:hover { color: var(--gold); }
+
+/* ---------- Sections ---------- */
+.section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+.section-alt {
+  max-width: none;
+  background: var(--paper-alt);
+}
+.section-alt > * { max-width: 860px; margin-left: auto; margin-right: auto; }
+
+.section h2 {
+  font-size: 1.9rem;
+  letter-spacing: .15em;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background: var(--gold);
+  margin: 1rem auto 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2.2rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(31, 42, 68, .06);
+}
+
+.note {
+  margin-top: 1.5rem;
+  font-size: .85rem;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  padding-left: 1rem;
+}
+
+/* ---------- Timeline ---------- */
+.timeline { list-style: none; }
+.timeline li {
+  display: flex;
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+.timeline li:last-child { border-bottom: none; }
+.tl-year {
+  flex: 0 0 4.5rem;
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--gold);
+  text-align: right;
+}
+.tl-body h3 { font-size: 1.15rem; margin-bottom: .4rem; }
+.tl-body p { color: var(--ink-soft); }
+
+/* ---------- Legacy grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.grid .card h3 { margin-bottom: .8rem; }
+
+/* ---------- Memory ---------- */
+blockquote {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+blockquote footer {
+  margin-top: 1rem;
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--ink);
+  color: #b9c4dc;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  letter-spacing: .15em;
+}
+.footer-small {
+  margin-top: .8rem;
+  font-size: .78rem;
+  color: #7487ab;
+}
+
+@media (max-width: 600px) {
+  .timeline li { flex-direction: column; gap: .3rem; }
+  .tl-year { text-align: left; }
+  .card { padding: 1.5rem 1.4rem; }
+}
