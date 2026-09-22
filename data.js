@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划促成首届加州大学伯克利分校模拟联合国中国会议举行",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-bmun-china.md",
+      desc: "2015年5月29–31日，西安曲江国际会议中心。首届BMUN CHINA：二十余所学校约200名代表，设联大四委、国际劳工组织、国际刑警组织、全球契约组织、欧盟与成吉思汗内阁六个委员会，11位伯克利主席来华——这是BMUN首次在美国本土之外独立举办会议。"
+    },
+    {
       title: "联动计划协力2015年泛渤海全国中学生模拟联合国大会举行",
       year: "2015",
       category: "新闻通讯",
