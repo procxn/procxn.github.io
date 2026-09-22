@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力第二届中南地区中学生模拟联合国大会成功举办",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-cscmunc.md",
+      desc: "2015年2月6–9日，长沙。长沙一中与湖南师大附中联合主办，多所学校近百名代表，设联合国粮农组织、安理会与环境规划署三个委员会，就中东粮食短缺、乌克兰局势、核设施退役等议题磋商；联动计划派出学术总监与主席团提供全程学术支持。"
+    },
+    {
       title: "联动计划促成首届加州大学伯克利分校模拟联合国中国会议举行",
       year: "2015",
       category: "新闻通讯",
