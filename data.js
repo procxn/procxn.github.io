@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力首届京津冀模联暨2016年泛渤海中学生模拟联合国大会成功举行",
+      year: "2016",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2016-panbohai-jjj.md",
+      desc: "2016年7月18–22日，天津。首届京津冀中学生模拟联合国大会暨2016泛渤海模联：约70所学校400余名代表，设联合国系统、日本系统、1787东方危机、英国下议院、G20峰会等十一个委员会；联动计划作为协办方提供全面支持。"
+    },
+    {
       title: "联动计划助力第四届华熠全国中学生模拟联合国大会成功举办",
       year: "2016",
       category: "新闻通讯",
