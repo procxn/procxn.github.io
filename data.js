@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力首届乌鲁木齐联动全疆模拟联合国大会举行",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-lxjmunc.md",
+      desc: "2015年11月21–22日，乌鲁木齐。新疆生产建设兵团团委主办，14所学校近150名代表，设历史安理会（英）、世界卫生组织与难民署三个委员会——模拟联合国第一次真正意义上落户新疆；联动计划派出学术总监与各委员会主席团负责人，提供全程学术支持。"
+    },
+    {
       title: "联动计划协力2016年加州大学伯克利分校模拟联合国中国会议举行",
       year: "2016",
       category: "新闻通讯",
