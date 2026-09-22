@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划协力2015年泛渤海全国中学生模拟联合国大会举行",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-panbohai.md",
+      desc: "2015年7月20–24日，天津外大附校。约70所学校近400名代表，设联合国系统（再现1973年中东局势）与1915齐美尔瓦尔德会议、1664台海风云、国际展览局、美国参议院等九个委员会；联动计划理事汪益浦出任大会学术总监。"
+    },
+    {
       title: "联动计划2015年夏季招募令",
       year: "2015",
       category: "组织文献",
