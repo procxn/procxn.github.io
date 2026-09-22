@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划助力第四届华熠全国中学生模拟联合国大会成功举办",
+      year: "2016",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2016-gsmunc.md",
+      desc: "2016年8月10–14日，上海。北郊高中主办的第四届华熠模联（GSMUNC）：近200名代表与30余名学术成员参会，首设会场联动系统，另设1954日内瓦会议、US Senate等会场；联动计划成员出任学术委员长与会务总监，双方合作进入第四年。"
+    },
+    {
       title: "联动计划协力第三届中南地区中学生模拟联合国大会",
       year: "2016",
       category: "新闻通讯",
