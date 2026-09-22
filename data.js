@@ -50,6 +50,14 @@ const SITE_DATA = {
                  前台卡片只放缩略介绍，点"全文备份"查看完整原文 */
   documents: [
     {
+      title: "联动计划助力2015年汇文全国中学生模拟联合国大会成功举办",
+      year: "2015",
+      category: "新闻通讯",
+      file: "",
+      fulltext: "https://github.com/procxn/procxn.github.io/blob/main/archive/documents/2015-huiwen.md",
+      desc: "2015年2月10–14日，南京金陵中学。汇文中国五周年：161所学校600余名代表、15个会场，含中国系统与多个历史危机会场；联动计划作为学术支持单位，执行长邢麟舟与理事季嘉宇出任学术总监，20位成员进入学术团队。"
+    },
+    {
       title: "联动计划协力第二届中南地区中学生模拟联合国大会成功举办",
       year: "2015",
       category: "新闻通讯",
