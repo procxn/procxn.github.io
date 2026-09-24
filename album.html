@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>图册 · 联动计划 Procxn 纪念档案馆</title>
+<meta property="og:title" content="图册 · 联动计划纪念档案馆">
+<meta property="og:description" content="那些年我们开过的会、熬过的夜、拍下的合影。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.procxn.org/assets/og-image.png">
+<meta property="og:site_name" content="联动计划纪念档案馆">
+<meta property="og:locale" content="zh_CN">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231f2a44'/%3E%3Ctext x='50' y='63' font-size='42' text-anchor='middle' fill='%23e8c979' font-family='Georgia,serif'%3EP%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -53,6 +59,14 @@
   if (!album) { location.href = 'gallery.html'; return; }
 
   document.title = album.title + ' · 图册 · 联动计划纪念档案馆';
+  var canon = document.createElement('link');
+  canon.rel = 'canonical';
+  canon.href = 'https://www.procxn.org/album.html?album=' + album.id;
+  document.head.appendChild(canon);
+  var ogUrl = document.createElement('meta');
+  ogUrl.setAttribute('property', 'og:url');
+  ogUrl.content = canon.href;
+  document.head.appendChild(ogUrl);
   document.getElementById('album-title').textContent = album.title;
   document.getElementById('album-desc').textContent =
     album.year + ' · ' + album.desc;
